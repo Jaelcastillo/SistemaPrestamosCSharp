@@ -45,3 +45,33 @@ CREATE TABLE Moras (
 
     FOREIGN KEY (PrestamoId) REFERENCES Prestamos(PrestamoId)
 );
+
+SELECT * 
+FROM Clientes
+WHERE ClienteId = @ClienteId;
+
+SELECT *
+FROM Prestamos
+WHERE PrestamoId = @PrestamoId;
+
+SELECT 
+    SUM(Monto) AS TotalPrestado,
+    SUM(Interes) AS TotalIntereses
+FROM Prestamos;
+
+SELECT 
+    C.NombreCompleto,
+    COUNT(M.MoraId) AS CantidadMoras
+FROM Moras M
+INNER JOIN Prestamos P ON M.PrestamoId = P.PrestamoId
+INNER JOIN Clientes C ON P.ClienteId = C.ClienteId
+GROUP BY C.NombreCompleto;
+
+SELECT 
+    C.NombreCompleto,
+    COUNT(M.MoraId) AS TotalMoras
+FROM Moras M
+INNER JOIN Prestamos P ON M.PrestamoId = P.PrestamoId
+INNER JOIN Clientes C ON P.ClienteId = C.ClienteId
+GROUP BY C.NombreCompleto
+HAVING COUNT(M.MoraId) >= 3;
