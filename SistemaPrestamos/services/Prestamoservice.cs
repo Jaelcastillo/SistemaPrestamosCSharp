@@ -28,6 +28,24 @@ namespace SistemaPrestamos.Services
             return capital * Math.Pow((1 + tasa / n), n * tiempo);
         }
 
+        // Cuota mensual (Sistema Francés)
+        public double CalcularCuotaMensual(double capital, double tasaAnual, int meses)
+        {
+            double tasaMensual = tasaAnual / 12;
+
+            double cuota = capital *
+                          (tasaMensual * Math.Pow(1 + tasaMensual, meses)) /
+                          (Math.Pow(1 + tasaMensual, meses) - 1);
+
+            return cuota;
+        }
+
+        // Mora (10% de la cuota)
+        public double CalcularMora(double cuota)
+        {
+            return cuota * 0.10;
+        }
+
     }
 }
 
