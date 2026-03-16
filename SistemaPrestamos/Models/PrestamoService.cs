@@ -1,12 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SistemaPrestamos.Models
+namespace SistemaPrestamos.Services
 {
-    internal class PrestamoService
+    public class PrService
     {
+        // Conversión de Tasa Efectiva Anual (TEA) a Tasa Efectiva Mensual (TEM)
+        // Fórmula: TEM = (1 + TEA)^(1/12) - 1
+        public double CalcularTEM(double tea)
+        {
+            return Math.Pow(1 + tea, 1.0 / 12.0) - 1;
+        }
     }
 }
+
