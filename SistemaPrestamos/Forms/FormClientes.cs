@@ -19,7 +19,22 @@ namespace SistemaPrestamos.Forms
 
         private void buttonguardar_Click(object sender, EventArgs e)
         {
+			if (textBoxNombre.Text == "" || textBoxcedula.Text == "" || textBoxmonto.Text == "")
+			{
+				MessageBox.Show("Debe completar los campos");
+			}
+			else
+			{
+				dataGridViewClientes.Rows.Add(textBoxNombre.Text, textBoxcedula.Text, textBoxmonto.Text);
+			}
+		}
 
-        }
+        private void buttonborrar_Click(object sender, EventArgs e)
+        {
+			textBoxNombre.Clear();
+			textBoxcedula.Clear();
+			textBoxmonto.Clear();
+		}
+	}
     }
-}
+

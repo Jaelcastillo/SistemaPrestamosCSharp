@@ -16,5 +16,25 @@ namespace SistemaPrestamos.Forms
         {
             InitializeComponent();
         }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+			if (textBoxtipo.Text == "")
+			{
+				MessageBox.Show("Debe escribir el tipo de reporte");
+			}
+			else
+			{
+				dataGridViewreportes.Rows.Add(textBoxtipo.Text, textBoxinicio.Text, textBoxfin.Text);
+				MessageBox.Show("Reporte generado");
+			}
+		}
+
+        private void buttonBorrar_Click(object sender, EventArgs e)
+        {
+			textBoxtipo.Clear();
+			textBoxinicio.Clear();
+			textBoxfin.Clear();
+		}
     }
 }

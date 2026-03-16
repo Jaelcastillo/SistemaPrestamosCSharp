@@ -41,6 +41,10 @@
 			this.buttonBuscar = new System.Windows.Forms.Button();
 			this.buttonBorrar = new System.Windows.Forms.Button();
 			this.dataGridViewPrestamos = new System.Windows.Forms.DataGridView();
+			this.Clientes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Interes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrestamos)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -134,6 +138,7 @@
 			this.botonguardar.TabIndex = 9;
 			this.botonguardar.Text = "Guardar";
 			this.botonguardar.UseVisualStyleBackColor = true;
+			this.botonguardar.Click += new System.EventHandler(this.botonguardar_Click);
 			// 
 			// buttonBuscar
 			// 
@@ -145,6 +150,7 @@
 			this.buttonBuscar.TabIndex = 10;
 			this.buttonBuscar.Text = "Buscar";
 			this.buttonBuscar.UseVisualStyleBackColor = true;
+			this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
 			// 
 			// buttonBorrar
 			// 
@@ -156,16 +162,50 @@
 			this.buttonBorrar.TabIndex = 11;
 			this.buttonBorrar.Text = "Borrar";
 			this.buttonBorrar.UseVisualStyleBackColor = true;
+			this.buttonBorrar.Click += new System.EventHandler(this.buttonBorrar_Click);
 			// 
 			// dataGridViewPrestamos
 			// 
 			this.dataGridViewPrestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridViewPrestamos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Clientes,
+            this.Monto,
+            this.Interes,
+            this.Fecha});
 			this.dataGridViewPrestamos.Location = new System.Drawing.Point(417, 100);
 			this.dataGridViewPrestamos.Name = "dataGridViewPrestamos";
 			this.dataGridViewPrestamos.RowHeadersWidth = 51;
 			this.dataGridViewPrestamos.RowTemplate.Height = 24;
 			this.dataGridViewPrestamos.Size = new System.Drawing.Size(572, 422);
 			this.dataGridViewPrestamos.TabIndex = 12;
+			// 
+			// Clientes
+			// 
+			this.Clientes.HeaderText = "Clientes";
+			this.Clientes.MinimumWidth = 6;
+			this.Clientes.Name = "Clientes";
+			this.Clientes.Width = 125;
+			// 
+			// Monto
+			// 
+			this.Monto.HeaderText = "Monto";
+			this.Monto.MinimumWidth = 6;
+			this.Monto.Name = "Monto";
+			this.Monto.Width = 125;
+			// 
+			// Interes
+			// 
+			this.Interes.HeaderText = "Interes";
+			this.Interes.MinimumWidth = 6;
+			this.Interes.Name = "Interes";
+			this.Interes.Width = 125;
+			// 
+			// Fecha
+			// 
+			this.Fecha.HeaderText = "Fecha";
+			this.Fecha.MinimumWidth = 6;
+			this.Fecha.Name = "Fecha";
+			this.Fecha.Width = 125;
 			// 
 			// FormPrestamo
 			// 
@@ -208,5 +248,9 @@
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.Button buttonBorrar;
         private System.Windows.Forms.DataGridView dataGridViewPrestamos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Clientes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Monto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Interes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
     }
 }

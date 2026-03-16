@@ -39,6 +39,9 @@
 			this.buttonBuscar = new System.Windows.Forms.Button();
 			this.buttonborrar = new System.Windows.Forms.Button();
 			this.dataGridViewClientes = new System.Windows.Forms.DataGridView();
+			this.Cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -137,16 +140,42 @@
 			this.buttonborrar.TabIndex = 9;
 			this.buttonborrar.Text = "Borrar";
 			this.buttonborrar.UseVisualStyleBackColor = true;
+			this.buttonborrar.Click += new System.EventHandler(this.buttonborrar_Click);
 			// 
 			// dataGridViewClientes
 			// 
 			this.dataGridViewClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridViewClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Cedula,
+            this.Nombre,
+            this.Monto});
 			this.dataGridViewClientes.Location = new System.Drawing.Point(79, 263);
 			this.dataGridViewClientes.Name = "dataGridViewClientes";
 			this.dataGridViewClientes.RowHeadersWidth = 51;
 			this.dataGridViewClientes.RowTemplate.Height = 24;
-			this.dataGridViewClientes.Size = new System.Drawing.Size(536, 175);
+			this.dataGridViewClientes.Size = new System.Drawing.Size(431, 175);
 			this.dataGridViewClientes.TabIndex = 10;
+			// 
+			// Cedula
+			// 
+			this.Cedula.HeaderText = "Cedula";
+			this.Cedula.MinimumWidth = 6;
+			this.Cedula.Name = "Cedula";
+			this.Cedula.Width = 125;
+			// 
+			// Nombre
+			// 
+			this.Nombre.HeaderText = "Nombre";
+			this.Nombre.MinimumWidth = 6;
+			this.Nombre.Name = "Nombre";
+			this.Nombre.Width = 125;
+			// 
+			// Monto
+			// 
+			this.Monto.HeaderText = "Monto";
+			this.Monto.MinimumWidth = 6;
+			this.Monto.Name = "Monto";
+			this.Monto.Width = 125;
 			// 
 			// FormClientes
 			// 
@@ -186,5 +215,8 @@
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.Button buttonborrar;
         private System.Windows.Forms.DataGridView dataGridViewClientes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cedula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Monto;
     }
 }

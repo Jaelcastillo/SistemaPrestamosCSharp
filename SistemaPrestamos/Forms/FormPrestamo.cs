@@ -21,5 +21,32 @@ namespace SistemaPrestamos.Forms
         {
 
         }
+
+        private void botonguardar_Click(object sender, EventArgs e)
+        {
+			if (textBoxClientes.Text == "" || textBoxMonto.Text == "")
+			{
+				MessageBox.Show("Debe completar los campos");
+			}
+			else
+			{
+				dataGridViewPrestamos.Rows.Add(textBoxClientes.Text, textBoxMonto.Text, textBoxInteres.Text, textBoxFecha.Text);
+				MessageBox.Show("Préstamo guardado");
+			}
+		}
+
+        private void buttonBorrar_Click(object sender, EventArgs e)
+        {
+
+			textBoxClientes.Clear();
+			textBoxMonto.Clear();
+			textBoxInteres.Clear();
+			textBoxFecha.Clear();
+		}
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+			MessageBox.Show("Buscar préstamo");
+		}
     }
 }

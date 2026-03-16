@@ -39,9 +39,13 @@
 			this.textBoxmetodo = new System.Windows.Forms.TextBox();
 			this.buttonguardar = new System.Windows.Forms.Button();
 			this.buttonborrar = new System.Windows.Forms.Button();
+			this.dataGridViewpago = new System.Windows.Forms.DataGridView();
+			this.Clientes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Pagado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.buttonbuscar = new System.Windows.Forms.Button();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewpago)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -133,6 +137,7 @@
 			this.buttonguardar.TabIndex = 9;
 			this.buttonguardar.Text = "Guardar";
 			this.buttonguardar.UseVisualStyleBackColor = true;
+			this.buttonguardar.Click += new System.EventHandler(this.buttonguardar_Click);
 			// 
 			// buttonborrar
 			// 
@@ -144,6 +149,50 @@
 			this.buttonborrar.TabIndex = 10;
 			this.buttonborrar.Text = "Borrar";
 			this.buttonborrar.UseVisualStyleBackColor = true;
+			this.buttonborrar.Click += new System.EventHandler(this.buttonborrar_Click);
+			// 
+			// dataGridViewpago
+			// 
+			this.dataGridViewpago.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridViewpago.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Clientes,
+            this.Pagado,
+            this.Fecha,
+            this.pago});
+			this.dataGridViewpago.Location = new System.Drawing.Point(37, 321);
+			this.dataGridViewpago.Name = "dataGridViewpago";
+			this.dataGridViewpago.RowHeadersWidth = 51;
+			this.dataGridViewpago.RowTemplate.Height = 24;
+			this.dataGridViewpago.Size = new System.Drawing.Size(558, 231);
+			this.dataGridViewpago.TabIndex = 12;
+			// 
+			// Clientes
+			// 
+			this.Clientes.HeaderText = "Clientes";
+			this.Clientes.MinimumWidth = 6;
+			this.Clientes.Name = "Clientes";
+			this.Clientes.Width = 125;
+			// 
+			// Pagado
+			// 
+			this.Pagado.HeaderText = "Pagado";
+			this.Pagado.MinimumWidth = 6;
+			this.Pagado.Name = "Pagado";
+			this.Pagado.Width = 125;
+			// 
+			// Fecha
+			// 
+			this.Fecha.HeaderText = "Fecha";
+			this.Fecha.MinimumWidth = 6;
+			this.Fecha.Name = "Fecha";
+			this.Fecha.Width = 125;
+			// 
+			// pago
+			// 
+			this.pago.HeaderText = "pago";
+			this.pago.MinimumWidth = 6;
+			this.pago.Name = "pago";
+			this.pago.Width = 125;
 			// 
 			// buttonbuscar
 			// 
@@ -155,23 +204,14 @@
 			this.buttonbuscar.TabIndex = 11;
 			this.buttonbuscar.Text = "Buscar";
 			this.buttonbuscar.UseVisualStyleBackColor = true;
-			// 
-			// dataGridView1
-			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(37, 321);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(576, 231);
-			this.dataGridView1.TabIndex = 12;
+			this.buttonbuscar.Click += new System.EventHandler(this.buttonbuscar_Click);
 			// 
 			// FormPago
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(830, 564);
-			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.dataGridViewpago);
 			this.Controls.Add(this.buttonbuscar);
 			this.Controls.Add(this.buttonborrar);
 			this.Controls.Add(this.buttonguardar);
@@ -186,7 +226,7 @@
 			this.Controls.Add(this.label1);
 			this.Name = "FormPago";
 			this.Text = "FormPago";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewpago)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -205,7 +245,11 @@
         private System.Windows.Forms.TextBox textBoxmetodo;
         private System.Windows.Forms.Button buttonguardar;
         private System.Windows.Forms.Button buttonborrar;
+        private System.Windows.Forms.DataGridView dataGridViewpago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Clientes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pagado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pago;
         private System.Windows.Forms.Button buttonbuscar;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
