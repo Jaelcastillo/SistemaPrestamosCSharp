@@ -24,6 +24,21 @@ namespace SistemaPrestamos.Services
         {
             return prestamo + interes;
         }
+
+        // Cálculo de cuota mensual (Sistema Francés)
+        public double CalcularCuotaMensual(double prestamo, double tea, int meses)
+        {
+            double tem = CalcularTEM(tea);
+            double potencia = Math.Pow(1 + tem, meses);
+
+            return prestamo * (tem * potencia) / (potencia - 1);
+        }
+
+        // Cálculo de mora (10% de la cuota)
+        public double CalcularMora(double cuota)
+        {
+            return cuota * 0.10;
+        }
     }
 }
 
