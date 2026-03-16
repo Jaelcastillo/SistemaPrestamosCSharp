@@ -41,7 +41,10 @@
 			this.buttonBuscar = new System.Windows.Forms.Button();
 			this.buttonBorrar = new System.Windows.Forms.Button();
 			this.dataGridViewPrestamos = new System.Windows.Forms.DataGridView();
+			this.label6 = new System.Windows.Forms.Label();
+			this.textBoxtelefono = new System.Windows.Forms.TextBox();
 			this.Clientes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Interes = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -169,6 +172,7 @@
 			this.dataGridViewPrestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridViewPrestamos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Clientes,
+            this.Telefono,
             this.Monto,
             this.Interes,
             this.Fecha});
@@ -176,8 +180,25 @@
 			this.dataGridViewPrestamos.Name = "dataGridViewPrestamos";
 			this.dataGridViewPrestamos.RowHeadersWidth = 51;
 			this.dataGridViewPrestamos.RowTemplate.Height = 24;
-			this.dataGridViewPrestamos.Size = new System.Drawing.Size(572, 422);
+			this.dataGridViewPrestamos.Size = new System.Drawing.Size(678, 422);
 			this.dataGridViewPrestamos.TabIndex = 12;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(42, 262);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(73, 20);
+			this.label6.TabIndex = 13;
+			this.label6.Text = "Telefono:";
+			// 
+			// textBoxtelefono
+			// 
+			this.textBoxtelefono.Location = new System.Drawing.Point(129, 262);
+			this.textBoxtelefono.Name = "textBoxtelefono";
+			this.textBoxtelefono.Size = new System.Drawing.Size(187, 22);
+			this.textBoxtelefono.TabIndex = 14;
 			// 
 			// Clientes
 			// 
@@ -185,6 +206,13 @@
 			this.Clientes.MinimumWidth = 6;
 			this.Clientes.Name = "Clientes";
 			this.Clientes.Width = 125;
+			// 
+			// Telefono
+			// 
+			this.Telefono.HeaderText = "Telefono";
+			this.Telefono.MinimumWidth = 6;
+			this.Telefono.Name = "Telefono";
+			this.Telefono.Width = 125;
 			// 
 			// Monto
 			// 
@@ -211,7 +239,9 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1017, 534);
+			this.ClientSize = new System.Drawing.Size(1107, 534);
+			this.Controls.Add(this.textBoxtelefono);
+			this.Controls.Add(this.label6);
 			this.Controls.Add(this.dataGridViewPrestamos);
 			this.Controls.Add(this.buttonBorrar);
 			this.Controls.Add(this.buttonBuscar);
@@ -249,8 +279,11 @@
         private System.Windows.Forms.Button buttonBorrar;
         private System.Windows.Forms.DataGridView dataGridViewPrestamos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Clientes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn Monto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Interes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxtelefono;
     }
 }

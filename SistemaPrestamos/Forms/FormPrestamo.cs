@@ -30,7 +30,7 @@ namespace SistemaPrestamos.Forms
 			}
 			else
 			{
-				dataGridViewPrestamos.Rows.Add(textBoxClientes.Text, textBoxMonto.Text, textBoxInteres.Text, textBoxFecha.Text);
+				dataGridViewPrestamos.Rows.Add(textBoxClientes.Text, textBoxMonto.Text, textBoxInteres.Text, textBoxFecha.Text, textBoxtelefono);
 				MessageBox.Show("Préstamo guardado");
 			}
 		}
@@ -42,6 +42,7 @@ namespace SistemaPrestamos.Forms
 			textBoxMonto.Clear();
 			textBoxInteres.Clear();
 			textBoxFecha.Clear();
+			textBoxtelefono.Clear();
 		}
 
         private void buttonBuscar_Click(object sender, EventArgs e)
