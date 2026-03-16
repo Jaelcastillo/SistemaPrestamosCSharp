@@ -10,6 +10,20 @@ namespace SistemaPrestamos.Services
         {
             return Math.Pow(1 + tea, 1.0 / 12.0) - 1;
         }
+
+        // Cálculo de interés simple
+        // Fórmula: I = P * r * t
+        public double CalcularInteresSimple(double prestamo, double tasaAnual, int meses)
+        {
+            double tiempoAnios = meses / 12.0;
+            return prestamo * tasaAnual * tiempoAnios;
+        }
+
+        // Cálculo del monto total a pagar
+        public double CalcularMontoTotal(double prestamo, double interes)
+        {
+            return prestamo + interes;
+        }
     }
 }
 
