@@ -39,7 +39,16 @@
 			this.buttonBuscar = new System.Windows.Forms.Button();
 			this.buttonborrar = new System.Windows.Forms.Button();
 			this.dataGridViewClientes = new System.Windows.Forms.DataGridView();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label7 = new System.Windows.Forms.Label();
+			this.textBoxtelefono = new System.Windows.Forms.TextBox();
+			this.textBoxdireccion = new System.Windows.Forms.TextBox();
+			this.textBoxGarantia = new System.Windows.Forms.TextBox();
 			this.Cedula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.DIreccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Garantia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).BeginInit();
@@ -50,7 +59,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Modern No. 20", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label1.Location = new System.Drawing.Point(312, 38);
+			this.label1.Location = new System.Drawing.Point(309, 19);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(120, 34);
 			this.label1.TabIndex = 0;
@@ -60,7 +69,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(32, 116);
+			this.label2.Location = new System.Drawing.Point(23, 72);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(68, 20);
 			this.label2.TabIndex = 1;
@@ -70,7 +79,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(32, 164);
+			this.label3.Location = new System.Drawing.Point(23, 116);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(59, 20);
 			this.label3.TabIndex = 2;
@@ -80,7 +89,7 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(32, 207);
+			this.label4.Location = new System.Drawing.Point(24, 152);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(58, 20);
 			this.label4.TabIndex = 3;
@@ -88,30 +97,30 @@
 			// 
 			// textBoxNombre
 			// 
-			this.textBoxNombre.Location = new System.Drawing.Point(108, 116);
+			this.textBoxNombre.Location = new System.Drawing.Point(97, 75);
 			this.textBoxNombre.Name = "textBoxNombre";
-			this.textBoxNombre.Size = new System.Drawing.Size(232, 22);
+			this.textBoxNombre.Size = new System.Drawing.Size(182, 22);
 			this.textBoxNombre.TabIndex = 4;
 			// 
 			// textBoxcedula
 			// 
-			this.textBoxcedula.Location = new System.Drawing.Point(97, 164);
+			this.textBoxcedula.Location = new System.Drawing.Point(88, 116);
 			this.textBoxcedula.Name = "textBoxcedula";
-			this.textBoxcedula.Size = new System.Drawing.Size(232, 22);
+			this.textBoxcedula.Size = new System.Drawing.Size(191, 22);
 			this.textBoxcedula.TabIndex = 5;
 			// 
 			// textBoxmonto
 			// 
-			this.textBoxmonto.Location = new System.Drawing.Point(97, 205);
+			this.textBoxmonto.Location = new System.Drawing.Point(97, 152);
 			this.textBoxmonto.Name = "textBoxmonto";
-			this.textBoxmonto.Size = new System.Drawing.Size(232, 22);
+			this.textBoxmonto.Size = new System.Drawing.Size(147, 22);
 			this.textBoxmonto.TabIndex = 6;
 			// 
 			// buttonguardar
 			// 
 			this.buttonguardar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttonguardar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.buttonguardar.Location = new System.Drawing.Point(467, 116);
+			this.buttonguardar.Location = new System.Drawing.Point(665, 19);
 			this.buttonguardar.Name = "buttonguardar";
 			this.buttonguardar.Size = new System.Drawing.Size(98, 40);
 			this.buttonguardar.TabIndex = 7;
@@ -123,7 +132,7 @@
 			// 
 			this.buttonBuscar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttonBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.buttonBuscar.Location = new System.Drawing.Point(634, 116);
+			this.buttonBuscar.Location = new System.Drawing.Point(665, 75);
 			this.buttonBuscar.Name = "buttonBuscar";
 			this.buttonBuscar.Size = new System.Drawing.Size(98, 40);
 			this.buttonBuscar.TabIndex = 8;
@@ -134,7 +143,7 @@
 			// 
 			this.buttonborrar.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.buttonborrar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-			this.buttonborrar.Location = new System.Drawing.Point(555, 187);
+			this.buttonborrar.Location = new System.Drawing.Point(665, 132);
 			this.buttonborrar.Name = "buttonborrar";
 			this.buttonborrar.Size = new System.Drawing.Size(98, 40);
 			this.buttonborrar.TabIndex = 9;
@@ -147,14 +156,68 @@
 			this.dataGridViewClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridViewClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cedula,
+            this.telefono,
+            this.DIreccion,
+            this.Garantia,
             this.Nombre,
             this.Monto});
-			this.dataGridViewClientes.Location = new System.Drawing.Point(79, 263);
+			this.dataGridViewClientes.Location = new System.Drawing.Point(-2, 263);
 			this.dataGridViewClientes.Name = "dataGridViewClientes";
 			this.dataGridViewClientes.RowHeadersWidth = 51;
 			this.dataGridViewClientes.RowTemplate.Height = 24;
-			this.dataGridViewClientes.Size = new System.Drawing.Size(431, 175);
+			this.dataGridViewClientes.Size = new System.Drawing.Size(804, 175);
 			this.dataGridViewClientes.TabIndex = 10;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(23, 187);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(73, 20);
+			this.label5.TabIndex = 11;
+			this.label5.Text = "Telefono:";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(383, 72);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(80, 20);
+			this.label6.TabIndex = 12;
+			this.label6.Text = "Direccion:";
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.Location = new System.Drawing.Point(383, 107);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(74, 20);
+			this.label7.TabIndex = 13;
+			this.label7.Text = "Garantia:";
+			// 
+			// textBoxtelefono
+			// 
+			this.textBoxtelefono.Location = new System.Drawing.Point(102, 187);
+			this.textBoxtelefono.Name = "textBoxtelefono";
+			this.textBoxtelefono.Size = new System.Drawing.Size(147, 22);
+			this.textBoxtelefono.TabIndex = 14;
+			// 
+			// textBoxdireccion
+			// 
+			this.textBoxdireccion.Location = new System.Drawing.Point(469, 75);
+			this.textBoxdireccion.Name = "textBoxdireccion";
+			this.textBoxdireccion.Size = new System.Drawing.Size(147, 22);
+			this.textBoxdireccion.TabIndex = 15;
+			// 
+			// textBoxGarantia
+			// 
+			this.textBoxGarantia.Location = new System.Drawing.Point(469, 103);
+			this.textBoxGarantia.Name = "textBoxGarantia";
+			this.textBoxGarantia.Size = new System.Drawing.Size(147, 22);
+			this.textBoxGarantia.TabIndex = 16;
 			// 
 			// Cedula
 			// 
@@ -162,6 +225,27 @@
 			this.Cedula.MinimumWidth = 6;
 			this.Cedula.Name = "Cedula";
 			this.Cedula.Width = 125;
+			// 
+			// telefono
+			// 
+			this.telefono.HeaderText = "telefono";
+			this.telefono.MinimumWidth = 6;
+			this.telefono.Name = "telefono";
+			this.telefono.Width = 125;
+			// 
+			// DIreccion
+			// 
+			this.DIreccion.HeaderText = "Direccion";
+			this.DIreccion.MinimumWidth = 6;
+			this.DIreccion.Name = "DIreccion";
+			this.DIreccion.Width = 125;
+			// 
+			// Garantia
+			// 
+			this.Garantia.HeaderText = "Garantia";
+			this.Garantia.MinimumWidth = 6;
+			this.Garantia.Name = "Garantia";
+			this.Garantia.Width = 125;
 			// 
 			// Nombre
 			// 
@@ -182,7 +266,13 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(993, 450);
+			this.Controls.Add(this.textBoxGarantia);
+			this.Controls.Add(this.textBoxdireccion);
+			this.Controls.Add(this.textBoxtelefono);
+			this.Controls.Add(this.label7);
+			this.Controls.Add(this.label6);
+			this.Controls.Add(this.label5);
 			this.Controls.Add(this.dataGridViewClientes);
 			this.Controls.Add(this.buttonborrar);
 			this.Controls.Add(this.buttonBuscar);
@@ -215,8 +305,17 @@
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.Button buttonborrar;
         private System.Windows.Forms.DataGridView dataGridViewClientes;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cedula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIreccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Garantia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Monto;
+        private System.Windows.Forms.TextBox textBoxtelefono;
+        private System.Windows.Forms.TextBox textBoxdireccion;
+        private System.Windows.Forms.TextBox textBoxGarantia;
     }
 }

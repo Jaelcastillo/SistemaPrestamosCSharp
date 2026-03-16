@@ -19,13 +19,14 @@ namespace SistemaPrestamos.Forms
 
         private void buttonguardar_Click(object sender, EventArgs e)
         {
-			if (textBoxNombre.Text == "" || textBoxcedula.Text == "" || textBoxmonto.Text == "")
+			if (textBoxNombre.Text == "" || textBoxcedula.Text == "" || textBoxmonto.Text == "" || textBoxtelefono.Text =="" || textBoxdireccion.Text == "" || textBoxGarantia.Text == "")
 			{
 				MessageBox.Show("Debe completar los campos");
 			}
 			else
 			{
-				dataGridViewClientes.Rows.Add(textBoxNombre.Text, textBoxcedula.Text, textBoxmonto.Text);
+				dataGridViewClientes.Rows.Add(textBoxNombre.Text, textBoxcedula.Text, textBoxmonto.Text, 
+					textBoxtelefono.Text, textBoxdireccion, textBoxGarantia);
 			}
 		}
 
@@ -34,6 +35,9 @@ namespace SistemaPrestamos.Forms
 			textBoxNombre.Clear();
 			textBoxcedula.Clear();
 			textBoxmonto.Clear();
+			textBoxtelefono.Clear();
+			textBoxdireccion.Clear();
+			textBoxGarantia.Clear();
 		}
 	}
     }
