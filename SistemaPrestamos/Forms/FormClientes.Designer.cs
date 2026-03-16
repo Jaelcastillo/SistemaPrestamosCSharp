@@ -38,8 +38,8 @@
 			this.buttonguardar = new System.Windows.Forms.Button();
 			this.buttonBuscar = new System.Windows.Forms.Button();
 			this.buttonborrar = new System.Windows.Forms.Button();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			this.dataGridViewClientes = new System.Windows.Forms.DataGridView();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -138,23 +138,23 @@
 			this.buttonborrar.Text = "Borrar";
 			this.buttonborrar.UseVisualStyleBackColor = true;
 			// 
-			// dataGridView1
+			// dataGridViewClientes
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(79, 263);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(536, 175);
-			this.dataGridView1.TabIndex = 10;
+			this.dataGridViewClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridViewClientes.Location = new System.Drawing.Point(79, 263);
+			this.dataGridViewClientes.Name = "dataGridViewClientes";
+			this.dataGridViewClientes.RowHeadersWidth = 51;
+			this.dataGridViewClientes.RowTemplate.Height = 24;
+			this.dataGridViewClientes.Size = new System.Drawing.Size(536, 175);
+			this.dataGridViewClientes.TabIndex = 10;
 			// 
-			// FormReporte
+			// FormClientes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ControlLightLight;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.dataGridViewClientes);
 			this.Controls.Add(this.buttonborrar);
 			this.Controls.Add(this.buttonBuscar);
 			this.Controls.Add(this.buttonguardar);
@@ -165,9 +165,9 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Name = "FormReporte";
+			this.Name = "FormClientes";
 			this.Text = "FormReporte";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -185,6 +185,6 @@
         private System.Windows.Forms.Button buttonguardar;
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.Button buttonborrar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewClientes;
     }
 }

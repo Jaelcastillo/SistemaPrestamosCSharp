@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaPrestamos.Forms;
 
 namespace SistemaPrestamos
 {
@@ -20,6 +21,13 @@ namespace SistemaPrestamos
         private void FormMenu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void registrarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormClientes clientes = new FormClientes();
+            clientes.MdiParent = this;
+            clientes.Show();
         }
     }
 }
