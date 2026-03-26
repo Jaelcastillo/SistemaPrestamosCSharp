@@ -26,8 +26,13 @@ namespace SistemaPrestamos
         private void registrarClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormClientes clientes = new FormClientes();
-            clientes.MdiParent = this;
+            clientes.MdiParent = tis;
             clientes.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
