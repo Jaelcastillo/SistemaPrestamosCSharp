@@ -4,6 +4,7 @@ namespace SistemaPrestamos.Services
 {
     public class PrService
     {
+        //cambio para que aparezca 
         // Conversión de Tasa Efectiva Anual (TEA) a Tasa Efectiva Mensual (TEM)
         // Fórmula: TEM = (1 + TEA)^(1/12) - 1
         public double CalcularTEM(double tea)
